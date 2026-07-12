@@ -19,7 +19,6 @@ git diff ... ...
 ls -altr
 git clone ...	克隆一个仓库
 git ls-files 	列出暂存区中的文件
-HEAD一般表示最新的暂存区
 git relog 	查看历史命令
 git rm  (--cached) ... 	移除（暂存区）的文件
 git push (-u origin main:mian)  	提交到origin的main分支
@@ -27,3 +26,5 @@ git pull
 git fetch
 git remote add  <name> <ssh-url> 		添加远程仓库
 git remote -v 		查看远程仓库别名
+git branch ... 创建分支 
+git switch ... 切换分支
