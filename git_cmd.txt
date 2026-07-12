@@ -22,7 +22,3 @@ git relog
 git rm  (--cached) ...
 git push
 git pull ...
-
-
-
-
