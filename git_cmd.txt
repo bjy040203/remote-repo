@@ -1,9 +1,21 @@
+工作区：现在使用的目录
+暂存区：即将放到下一个版本库中的目录 --cached
+
 git config --global user.name ""
 git config --global user.email ""
 git init
 git status
 git add ...
-git commit ...
+git commit (-am)...
 git restore ...
 git log --oneline
-git diff
+git diff ... ...
+ls -altr
+git clone ...
+git ls-files
+HEAD一般表示最新的暂存区
+git relog
+git rm  (--cached) ...
+SSH:
+	ssh-keygen -t ed25519 -C "bjy040203@163.com"
+	ls ~/.ssh
