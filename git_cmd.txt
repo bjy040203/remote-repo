@@ -1,5 +1,5 @@
 工作区：现在使用的目录
-暂存区：即将放到下一个版本库中的目录 --cached
+暂存区：即将放到下一个版本库中的目录 --cached/--staged
 
 SSH:
 	ssh-keygen -t ed25519 -C "bjy040203@163.com"
@@ -10,15 +10,20 @@ git config --global user.email ""
 git init
 git status
 git add ...
-git commit (-am)...
-git restore ...
+git commit (-am)... 
+git restore ...： 用最新提交（HEAD）里的版本，覆盖你工作区的文件
+	git restore --staged 文件名 :把文件从 暂存区（staging area）​ 撤出来，但不改工作区内容
+	git restore -s HEAD~1 文件名：用最新提交的前一个提交里的版本，覆盖你工作区的文件
 git log --oneline
 git diff ... ...
 ls -altr
-git clone ...
-git ls-files
+git clone ...	克隆一个仓库
+git ls-files 	列出暂存区中的文件
 HEAD一般表示最新的暂存区
-git relog
-git rm  (--cached) ...
-git push
-git pull ...
+git relog 	查看历史命令
+git rm  (--cached) ... 	移除（暂存区）的文件
+git push (-u origin main:mian)  	提交到origin的main分支
+git pull 
+git fetch
+git remote add  <name> <ssh-url> 		添加远程仓库
+git remote -v 		查看远程仓库别名
